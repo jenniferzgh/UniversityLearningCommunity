@@ -1,0 +1,13 @@
+<div id="recommended">
+    <div class="nav">
+      <ul nz-menu nzTheme="light" nzMode="horizontal">
+        <li nz-menu-item><a [routerLink]="['../recommended/recommend']"></a>热榜</li>
+        <li nz-menu-item><a [routerLink]="['../recommended/like']"></a>关注</li>
+        <li nz-menu-item><a [routerLink]="['../recommended/ProfessionalRelated']"></a>专业相关</li>
+        <li nz-menu-item><a [routerLink]="['../recommended/ArticalFromMyTeacher']"></a>教师文章</li>
+      </ul>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+</div>

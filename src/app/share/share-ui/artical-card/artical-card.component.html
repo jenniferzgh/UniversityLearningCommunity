@@ -1,0 +1,41 @@
+<div id="artical" *ngFor="let item of articalCardData">
+  <div class="title">
+    <a href="">{{item.title}}</a>
+  </div>
+  <div class="container">
+    <div class="img"><img [src]="item.imgUrl" alt="加载中"></div>
+    <div class="txt">
+      <span>{{item.content}}
+      <button>阅读全文<i nz-icon nzType="down" nzTheme="outline"></i></button>
+      </span>
+
+    </div>
+  </div>
+  <div class="tag">
+    <div class="btn">
+      <i nz-icon nzType="smile" nzTheme="outline"></i>
+      <span>{{item.like}}</span>人赞同
+    </div>
+    <div class="comment">
+      <i nz-icon nzType="message" nzTheme="outline"></i>
+      <span>{{item.numberOfComments}}</span>条评论
+    </div>
+    <div class="operation">
+      <div class="ope">
+        <i nz-icon nzType="download" nzTheme="outline"></i>
+        <span>下载</span>
+      </div>
+      <div class="ope">
+        <i nz-icon nzType="star" nzTheme="outline"></i>
+        <span>收藏</span>
+      </div>
+      <div class="ope">
+        <i nz-icon nzType="like" nzTheme="outline"></i>
+        <span>点赞</span>
+      </div>
+      <div class="ope">
+        <i nz-icon nzType="ellipsis" nzTheme="outline"></i>
+      </div>
+    </div>
+  </div>
+</div>

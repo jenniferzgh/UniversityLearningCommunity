@@ -1,0 +1,94 @@
+<div id="home">
+  <nz-layout class="layout">
+    <nz-header class="header">
+      <div class="wrap">
+          <div class="left">
+            <h1>华广学习社区</h1>
+            <ul nz-menu nzTheme="light" nzMode="horizontal">
+              <li nz-menu-item [nzSelected]="true"><a [routerLink]="['recommended/']" >首页</a></li>
+              <li nz-menu-item ><a [routerLink]="['answer']">等你来答</a></li>
+
+            </ul>
+            <div class="search">
+              <div class="searchleft">
+                <nz-input-group [nzSuffix]="suffixIconSearch">
+                  <input type="text" nz-input placeholder="input search text" />
+                </nz-input-group>
+                <ng-template #suffixIconSearch>
+                    <i nz-icon nzType="search"></i>
+                </ng-template>
+              </div>
+              <div class="searchRight">
+                <button nz-button nzType="primary">提问</button>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <ul>
+              <li
+              appClickoutside
+              (onClickOutSide)="onClickOutSide1()"
+              [bindFlag]="bindFlag1"
+              (click)="run1()"
+              >
+                <nz-badge [nzCount]="5">
+                  <i nz-icon nzType="bell" nzTheme="outline"></i>
+                </nz-badge>
+
+                <div class="popups1 popups" #popupsOne>
+                  <div class="poperverArrow"></div>
+                  <div class="userHomePage option" style="z-index: 999;">
+                    <i nz-icon nzType="user" nzTheme="outline"></i>
+                    <span>我的主页</span>
+                  </div>
+                  <div class="setting option">
+                    <i nz-icon nzType="setting" nzTheme="outline"></i>
+                    <span>设置</span>
+                  </div>
+                  <div class="logout option" [routerLink]="['../login']">
+                    <i nz-icon nzType="logout" nzTheme="outline"></i>
+                    <span>退出</span>
+                  </div>
+
+                </div>
+              </li>
+
+              <li
+              appClickoutside
+              (onClickOutSide)="onClickOutSide2()"
+              [bindFlag]="bindFlag2"
+              (click)="run2()">
+                <img src="assets/images/myPhoto.jpg" alt="头像"/>
+                <div class="popups2 popups" #popupsTwo>
+                  <div class="poperverArrow"></div>
+                  <div class="userHomePage option">
+                    <i nz-icon nzType="user" nzTheme="outline"></i>
+                    <span>我的主页</span>
+                  </div>
+                  <div class="setting option">
+                    <i nz-icon nzType="setting" nzTheme="outline"></i>
+                    <span>设置</span>
+                  </div>
+                  <div class="logout option" [routerLink]="['../login']">
+                    <i nz-icon nzType="logout" nzTheme="outline"></i>
+                    <span>退出</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nz-header>
+    <nz-content class="content">
+      <div class="left">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="right">
+        <app-write-card class="writeCard"></app-write-card>
+        <app-collection-card></app-collection-card>
+      </div>
+    </nz-content>
+
+  </nz-layout>
+</div>
+
