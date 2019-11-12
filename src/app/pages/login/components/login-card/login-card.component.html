@@ -1,16 +1,28 @@
 <div id="loginCard">
   <div class="userId">
-    <input type="text" placeholder="学生学号/教师工号" [(ngModel)]="userId" next-tab>
-    <span id="Suggestive" ></span>
+    <input type="text"
+    placeholder="学生学号/教师工号"
+    [(ngModel)]="userId"
+    next-tab
+    class="input-id"
+    (keyup.enter)="keyUpSearch()"
+    >
+    <span id="Suggestive" #Suggestive>{{suggestive}}</span>
   </div>
   <div class="passwd">
-    <input type="passwd" placeholder="密码" next-tab>
+    <input type="passwd"
+    [(ngModel)]="userPwd"
+    placeholder="密码"
+    next-tab
+    #InputPwd
+    (keyup.enter)="PwdKeyUp()"
+     >
   </div>
   <div class="forget">
     <span>忘记密码？</span>
   </div>
   <div class="submit">
-    <button (click)="goHome()">登录</button>
+    <button (click)="goHome()" #SermitBtn>登录</button>
   </div>
 </div>
 

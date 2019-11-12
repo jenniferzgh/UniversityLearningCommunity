@@ -1,0 +1,183 @@
+#write{
+  width: 100%;
+  min-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  .menu{
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 50px;
+   padding-left: 150px;
+   padding-right: 150px;
+   background: #fff;
+   box-shadow: 0 1px 3px rgba(26,26,26,.1);
+   -webkit-box-shadow:0 1px 3px rgba(26,26,26,.1);
+   display: flex;
+   justify-content: space-between;
+   z-index: 999;
+  .left{
+    display: flex;
+    justify-content: space-between;
+    h1{
+      height: 50px;
+      line-height: 50px;
+      padding: 0px;
+      margin:0px;
+      font-size: 28px;
+      color:#0084ff;
+      padding: 0px;
+      margin: 0px;
+    }
+    h2{
+      height: 50px;
+      line-height: 50px;
+      padding: 0px;
+      margin-left: 15px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #000;
+    }
+  }
+  .right{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    i{
+      margin-top: 15px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    ul{
+      position: absolute;
+      top: 60px;
+      right: -68px;
+      box-shadow: 0 5px 20px rgba(26,26,26,.1);
+      z-index: 205;
+      display: none;
+      padding: 0px;
+      margin: 0px;
+      z-index: 999;
+      li{
+
+        width: 160px;
+        font-size: 15px;
+        list-style: none;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background-color: #ccc;
+        }
+
+
+      }
+    }
+  }
+  }
+  .write-artical{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top:80px ;
+    .InserPhoto{
+      display: flex;
+      width: 100%;
+      height: 200px;
+      position: relative;
+      background-color: #ccc;
+      padding-top: 70px;
+      cursor: pointer;
+      input{
+        visibility: hidden;
+        position: absolute;
+        width: 700px;
+        height: 200px;
+        top: 0px;
+        left: 0px;
+      }
+      .contentImg{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        i{
+          display: flex;
+          font-size: 35px;
+          width: 35px;
+          height: 35px;
+          margin: 0 auto;
+
+        }
+        span{
+          display: flex;
+          font-size: 15px;
+        }
+      }
+
+    }
+    .articalTitle{
+      display: flex;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      input{
+        width: 100%;
+        border: 0px;
+        outline: none;
+        font-size: 30px;
+      }
+
+    }
+    .articalEditor{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      box-shadow: 0 5px 20px rgba(26,26,26,.1);
+      .w-e-toolbar{
+        border-bottom: 1px solid rgba(26,26,26,.1);
+        z-index: 888;
+      }
+      .w-e-text-container{
+        z-index: 888;
+      }
+      #editorMenu{
+        display: flex;
+
+
+      }
+      #editor{
+        display: flex;
+        height: 300px;
+
+
+      }
+    }
+    .submit{
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      button{
+        display: flex;
+        width: 120px;
+        height: 40px;
+        border-radius: 3px;
+        line-height: 40px;
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        background-color: #0084ff;
+        cursor: pointer;
+        outline: none;
+        border: 0px;
+        color:#fff;
+      }
+
+    }
+  }
+}

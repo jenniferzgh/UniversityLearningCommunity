@@ -1,1 +1,41 @@
-
+<div id="write">
+  <div class="menu">
+    <div class="left">
+      <h1>华广学习社区</h1>
+      <h2>写文章</h2>
+    </div>
+    <div class="right"
+      appClickoutside
+      (onClickOutSide)="onClickOutSide4()"
+      [bindFlag]="bindFlag4"
+      (click)="run4()"
+    >
+      <i nz-icon nzType="ellipsis" nzTheme="outline"></i>
+      <ul #WritePopups >
+        <li>草稿</li>
+        <li>我的文章</li>
+        <li (click)="goHome()">回到首页</li>
+      </ul>
+    </div>
+  </div>
+  <div class="write-artical">
+    <label class="InserPhoto">
+      <input type="file" (change)="fileChange($event)">
+      <div class="contentImg">
+        <i nz-icon nzType="camera" nzTheme="outline"></i>
+        <span>添加题图</span>
+      </div>
+    </label>
+    <div class="articalTitle">
+      <input type="text" class="titleEditor" placeholder="请输入标题，最多50个字">
+    </div>
+    <div class="articalEditor">
+      <div id="editorMenu"></div>
+      <div id="editor"></div>
+    </div>
+    <div class="submit">
+     <button class="saveAsDraft" #saveAsDraft (click)="RunSaveAsDraft()">保存为草稿</button>
+     <button class="issueArtical" #issueArtical (click)="RunIssueArtical()">发布文章</button>
+    </div>
+  </div>
+</div>

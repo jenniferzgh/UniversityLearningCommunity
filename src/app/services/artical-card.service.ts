@@ -9,12 +9,13 @@ import {map} from 'rxjs/internal/operators';
   providedIn: ServicesModule
 })
 export class ArticalCardService {
-
-  constructor(private http:HttpClient,@Inject(API_CONFIG) private uri:string) {
+private CheckResult:any;
+  constructor(private http:HttpClient,@Inject(API_CONFIG) private uri:string,) {
 
    }
    getArticalCardData():Observable<articalCardData[]>{
     return this.http.get(this.uri+'articalCard')
     .pipe(map((res:articalCardData[])=> res))
    }
+
 }

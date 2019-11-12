@@ -5,7 +5,6 @@ import { ShareModule } from './share/share.module';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +12,8 @@ import { ShareModule } from './share/share.module';
   imports: [
 
     CoreModule,
-    ShareModule
+    ShareModule,
+
 
 
   ],
