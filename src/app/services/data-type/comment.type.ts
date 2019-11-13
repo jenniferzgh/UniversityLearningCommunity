@@ -5,3 +5,6 @@ export type articalCardData={
   like:number;
   numberOfComments:number
 }
+export type Jsonmodel={
+  state:string;
+}

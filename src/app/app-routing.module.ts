@@ -6,12 +6,14 @@ import { WriteArticlesComponent } from './pages/write-articles/write-articles.co
 
 
 
+
 const routes: Routes = [
 
-  {path:"",redirectTo:"login",pathMatch:'full'},
+
   {path:"login",component:LoginComponent},
   {path:"home",component:HomeComponent},
-  {path:"write",component:WriteArticlesComponent}
+  {path:"write",component:WriteArticlesComponent},
+  {path:"",redirectTo:"login",pathMatch:'full'},
 ];
 
 @NgModule({

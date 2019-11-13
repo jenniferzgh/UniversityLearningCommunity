@@ -37,18 +37,7 @@
 
                 <div class="popups1 popups" #popupsOne>
                   <div class="poperverArrow"></div>
-                  <div class="userHomePage option" style="z-index: 999;">
-                    <i nz-icon nzType="user" nzTheme="outline"></i>
-                    <span>我的主页</span>
-                  </div>
-                  <div class="setting option">
-                    <i nz-icon nzType="setting" nzTheme="outline"></i>
-                    <span>设置</span>
-                  </div>
-                  <div class="logout option" [routerLink]="['../login']">
-                    <i nz-icon nzType="logout" nzTheme="outline"></i>
-                    <span>退出</span>
-                  </div>
+                  123
 
                 </div>
               </li>
@@ -65,8 +54,8 @@
                     <i nz-icon nzType="user" nzTheme="outline"></i>
                     <span>我的主页</span>
                   </div>
-                  <div class="setting option">
-                    <i nz-icon nzType="setting" nzTheme="outline"></i>
+                  <div class="setting option" [routerLink]="['setting']" [queryParams]="{userMsg:userMsg}">
+                    <i nz-icon nzType="setting" nzTheme="outline" ></i>
                     <span>设置</span>
                   </div>
                   <div class="logout option" [routerLink]="['../login']">

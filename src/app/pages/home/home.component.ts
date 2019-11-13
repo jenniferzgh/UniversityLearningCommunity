@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef,   Renderer2, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 
 
 @Component({
@@ -9,12 +9,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 private StudentId:any;
+private userMsg:any={
+  id:this.StudentId
+}
 bindFlag1=false;
 bindFlag2=false;
 @ViewChild('popupsOne',{static:true}) private popups1:ElementRef;
 @ViewChild('popupsTwo',{static:true}) private popups2:ElementRef;
-
-  constructor(public route:ActivatedRoute,private el:ElementRef, private render: Renderer2,) { }
+  constructor(public route:ActivatedRoute,private el:ElementRef, private render: Renderer2,private router:Router) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe((data) => {
@@ -45,7 +47,6 @@ bindFlag2=false;
     this.popups2.nativeElement.style.display="block";
     this.popups1.nativeElement.style.display="none";
   }
-
 
 
 

@@ -18,9 +18,7 @@ private handleClick:() => void;
     if(changes['bindFlag'] && !changes['bindFlag'].firstChange){
       if(this.bindFlag){
         this.handleClick = this.rd.listen(this.doc,'click',evt => {
-
           const isContain = this.el.nativeElement.contains(evt.target);
-          console.log(this.el.nativeElement);
          if(!isContain){
         this.onClickOutSide.emit();
          }
@@ -28,7 +26,6 @@ private handleClick:() => void;
       }
       else{
         this.handleClick();
-        console.log('解绑')
       }
     }
   }

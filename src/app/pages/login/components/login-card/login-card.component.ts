@@ -21,9 +21,7 @@ private userId:any="";
 
 
 goHome(){
-  alert(this.checkId());
   if(this.checkId()){
-
     let msg: NavigationExtras={
       queryParams:{'userId':this.userId},
         fragment:'anchor'

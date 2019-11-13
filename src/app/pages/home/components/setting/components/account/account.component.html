@@ -1,0 +1,26 @@
+<div id="account">
+  <ul>
+    <li class="editItem1 editItem">
+      <div class="myPhoto">
+        <i nz-icon nzType="camera" nzTheme="outline"></i>
+        <img [src]="_d.bypassSecurityTrustUrl(imgsrc)" >
+        <input type="file" (change)="userPhotoChange($event)">
+      </div>
+    </li>
+    <li class="editItem2 editItem">
+      <div class="title">
+        <h1>昵称</h1>
+        <span>编辑</span>
+      </div>
+      <div class="edit">
+      </div>
+    </li>
+    <li class="editItem3 editItem">
+      <h1>密码</h1>
+      <span>编辑</span>
+    </li>
+    <li class="editItem4 editItem">
+      <button (click)="onSubmit()">tijiao</button>
+    </li>
+  </ul>
+</div>

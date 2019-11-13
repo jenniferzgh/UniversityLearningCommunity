@@ -9,22 +9,32 @@ import { HotComponent } from './components/recommended/hot/hot.component';
 import { LikeComponent } from './components/recommended/like/like.component';
 import { ProfessionalRelatedComponent } from './components/recommended/professional-related/professional-related.component';
 import { ArticalFromMyTeacherComponent } from './components/recommended/artical-from-my-teacher/artical-from-my-teacher.component';
+import { SettingComponent } from './components/setting/setting.component';
+import { AccountComponent } from './components/setting/components/account/account.component';
+import { NotificationComponent } from './components/setting/components/notification/notification.component';
 
 
 
 const routes: Routes = [
   {path:"home",component:HomeComponent,children:[
     {path:"recommended",component:RecommendedComponent,
-    children:[
-      {path:"recommend",component:RecommendComponent},
-      {path:"like",component:LikeComponent},
-      {path:"ProfessionalRelated",component:ProfessionalRelatedComponent},
-      {path:"ArticalFromMyTeacher",component:ArticalFromMyTeacherComponent},
-      {path:"",redirectTo:"recommend",pathMatch:"full"}
-    ]
+      children:[
+        {path:"recommend",component:RecommendComponent},
+        {path:"like",component:LikeComponent},
+        {path:"ProfessionalRelated",component:ProfessionalRelatedComponent},
+        {path:"ArticalFromMyTeacher",component:ArticalFromMyTeacherComponent},
+        {path:"",redirectTo:"recommend",pathMatch:"full"}
+      ]
   },
     {path:"answer",component:AnswerComponent},
     {path:"discover",component:DiscoverComponent},
+    {path:"setting",component:SettingComponent,
+      children:[
+        {path:"account",component:AccountComponent},
+        {path:"notification",component:NotificationComponent},
+        {path:"",redirectTo:"account",pathMatch:"full"}
+      ]
+  },
     {path:"",redirectTo:"recommended" ,pathMatch:"full"}
   ]},
 

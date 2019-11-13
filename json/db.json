@@ -1,0 +1,52 @@
+{
+  "userData": [
+    {
+      "id": 201610110008,
+      "Name": "曾贵花",
+      "imageUrlOfUser": "assets/images/myPhoto.jpg",
+      "UserArticalId": [
+        2019102801,
+        2019102802,
+        2019102809
+      ],
+      "class": "通信工程2班",
+      "passwd": "hua123123"
+    }
+  ],
+  "articalCard": [
+    {
+      "title": "微积分学习之函数",
+      "imgUrl": "assets/images/articalImg/123.PNG",
+      "content": "一，实数与无理数的全体。常见集合：奥斯卡好地方啦空间萨拉空间的啦就看见空间看家见了我是大家开始就带耳机",
+      "like": 355,
+      "numberOfComments": 6,
+      "id": 2019102801
+    },
+    {
+      "title": "安卓学习",
+      "imgUrl": "assets/images/articalImg/4.jpg",
+      "content": "一，实数与无理数的全体。常见集合：奥斯卡好地方啦空间萨拉空间的啦就看见空间看家见了我是大家开始就带耳机",
+      "like": 222,
+      "numberOfComments": 5
+    },
+    {
+      "title": "微积分学习之函数",
+      "imgUrl": "assets/images/articalImg/4.jpg",
+      "content": "一，实数与无理数的全体。常见集合：奥斯卡好地方啦空间萨拉空间的啦就看见空间看家见了我是大家开始就带耳机",
+      "like": 111,
+      "numberOfComments": 4
+    },
+    {
+      "title": "微积分学习之函数",
+      "imgUrl": "assets/images/articalImg/4.jpg",
+      "content": "一，实数与无理数的全体。常见集合：奥斯卡好地方啦空间萨拉空间的啦就看见空间看家见了我是大家开始就带耳机",
+      "like": 22,
+      "numberOfComments": 3
+    }
+  ],
+  "upImage": [
+    {
+      "id": 1
+    }
+  ]
+}

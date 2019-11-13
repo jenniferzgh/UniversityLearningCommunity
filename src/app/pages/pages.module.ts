@@ -5,16 +5,21 @@ import { WriteArticlesComponent } from './write-articles/write-articles.componen
 
 
 
+
+
 @NgModule({
   declarations: [WriteArticlesComponent],
   imports: [
 
     HomeModule,
-    LoginModule
+    LoginModule,
+
+
   ],
   exports:[
     HomeModule,
-    LoginModule
+    LoginModule,
+
   ]
 })
 export class PagesModule { }

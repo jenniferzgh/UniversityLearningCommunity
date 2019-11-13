@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Author" content="网页作者" /> 
+	<meta name="Copyright" content="网站版权" /> 
+	<meta name="keywords" content="网站关键字" />
+	<meta name="description" content="网站描述" />
+	<link rel="stylesheet" href="">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+</head>
+
+<body>
+<input type="text" id="box1">
+<button >tijiao</button>
+</body>
+<script >
+$(function(){
+    $('button').click(function(){         
+	   $.ajax({ 
+		    url: 'http://localhost:3004/userData',
+   			type: 'post',
+    		data: {
+				
+                 name: $('#box1').val(),
+        		age: 10
+				
+        		
+            },
+    		dataType: 'text',
+    success: function (data) {
+        alert(data);
+    }
+		});
+	
+})
+})
+</script>
+</html>
